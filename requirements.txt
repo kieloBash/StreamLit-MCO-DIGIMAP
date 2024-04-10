@@ -1,3 +1,2 @@
 streamlit
-opencv-python
-cv2
+opencv-python-headless
