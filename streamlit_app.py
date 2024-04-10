@@ -1,6 +1,6 @@
 import numpy as np
 import streamlit as st
-# import image_stitching as ist
+import image_stitching as ist
 
 st.set_page_config(page_title="GRP6 DIGIMAP - IMAGE STITCHING", layout="wide", page_icon="🤖")
 
@@ -18,9 +18,9 @@ uploaded_files = st.file_uploader("Upload two images", type=['png', 'jpg', 'jpeg
 if uploaded_files is not None and len(uploaded_files) >= 2:
     # Create a button
     if st.button('Start Stitching'):
-        st.write("Clicked")
+        # st.write("Clicked")
         # Call the function when the button is clicked
-        # ist.stitch_images(uploaded_files)
+        ist.stitch_images(uploaded_files)
 else:
     st.warning("Please upload at least two images to start stitching.")
     
