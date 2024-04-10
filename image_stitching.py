@@ -107,7 +107,7 @@ def stitch_images(uploaded_files):
         st.image(stitched_image, caption='Stitched Image')
         # Convert the stitched image to bytes
         buf = BytesIO()
-        stitched_image.save(buf, format="JPEG")
+        stitched_image.save(buf, format="PNG")
         byte_im = buf.getvalue()
         
         # Create a download button for the stitched image
