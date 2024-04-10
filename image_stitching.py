@@ -3,6 +3,7 @@ import cv2
 import random
 import streamlit as st
 import tempfile
+from io import BytesIO
 
 def initial_alignment(img1, img2):
     # Detect SIFT keypoints and descriptors
@@ -104,3 +105,15 @@ def stitch_images(uploaded_files):
     
     if stitched_image is not None:
         st.image(stitched_image, caption='Stitched Image')
+        # Convert the stitched image to bytes
+        buf = BytesIO()
+        stitched_image.save(buf, format="JPEG")
+        byte_im = buf.getvalue()
+        
+        # Create a download button for the stitched image
+        st.download_button(
+            label="Download Stitched Image",
+            data=byte_im,
+            file_name="stitched_image.jpg",
+            mime="image/jpeg",
+        )
