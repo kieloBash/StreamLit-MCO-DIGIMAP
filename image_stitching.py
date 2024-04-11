@@ -110,6 +110,10 @@ def stitch_images(uploaded_files):
     stitched_image = stitching(img1_refined, img2_refined)
     
     if stitched_image is not None:
+        # Convert BGR to RGB
+        stitched_image_rgb = cv2.cvtColor(stitched_image, cv2.COLOR_BGR2RGB)
+        
+        # Display the stitched image
         st.image(stitched_image, caption='Stitched Image')
         
         # Convert the stitched image to bytes

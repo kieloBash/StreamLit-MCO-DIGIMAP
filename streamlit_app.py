@@ -28,7 +28,7 @@ if uploaded_files is not None and len(uploaded_files) >= 2:
         # Call the function when the button is clicked
         ist.stitch_images(uploaded_files)
 else:
-    st.warning("Please upload at least two images to start stitching.")
+    st.warning("Please upload two images to start stitching.")
     
 if uploaded_files is not None:
     # Display each uploaded image
