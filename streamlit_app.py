@@ -7,7 +7,13 @@ st.set_page_config(page_title="GRP6 DIGIMAP - IMAGE STITCHING", layout="wide", p
 """
 # Welcome to ImageStitching!
 
-Make your dream pics into one whole story! Upload images you want to make into a Panoramic Image
+Make your dream pics into one whole story! Upload images you want to make into a Panoramic Image.
+
+Disclaimer: Due to the paper used as the reference for the project, the website can only stitch pictures
+            that follow the ff rules:
+            1. pictures uploaded should be overlapping and not straight cuts/crops.
+            2. Please upload small sized pictures around up to 500px for the width and height.
+            3. Please upload up to 2 images at a time.
 """
 st.subheader("CALVIN CORONADO | MICHELLE MARTINEZ | KIELO MERCADO | GHRAZIELLE RAMOS | VALEN SALIG")
 
