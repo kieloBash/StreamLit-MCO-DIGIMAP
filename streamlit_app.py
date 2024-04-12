@@ -15,7 +15,7 @@ Disclaimer: Due to the paper used as the reference for the project, the website 
             2. Please upload small sized pictures around up to 500px for the width and height.
             3. Please upload up to 2 images at a time.
 """
-st.subheader("CALVIN CORONADO | MICHELLE MARTINEZ | KIELO MERCADO | GHRAZIELLE RAMOS | VALEN SALIG")
+st.subheader("CALVIN CORONADO | MICHELLE MARTINEZ | KIELO MERCADO | GHRAZIELLE DE RAMOS | VALEN SALIG")
 
 # Upload multiple image files
 uploaded_files = st.file_uploader("Upload two images", type=['png', 'jpg', 'jpeg'], accept_multiple_files=True)
